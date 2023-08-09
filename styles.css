@@ -71,3 +71,22 @@ body {
 .reset-btn:hover {
     background-color: #d32f2f;
 }
+
+/* ... (other styles) */
+
+.score-label {
+    font-size: 18px;
+    color: #fff;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.score {
+    background-color: #222;
+    padding: 15px 30px;
+    border-radius: 12px;
+    font-size: 24px;
+}
+
+/* ... (other styles) */
+
