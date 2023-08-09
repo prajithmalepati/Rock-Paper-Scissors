@@ -1,13 +1,13 @@
 const choiceArray = ["Rock", "Paper", "Scissors"];
 let computerChoice;
 let userChoice;
-let computerScore=0;
-let userScore=0;
+let computerScore = 0;
+let userScore = 0;
 
-// Add event listeners to the buttons to capture user choices
 document.getElementById("rock").addEventListener("click", () => getUserChoice("Rock"));
 document.getElementById("paper").addEventListener("click", () => getUserChoice("Paper"));
 document.getElementById("scissors").addEventListener("click", () => getUserChoice("Scissors"));
+document.getElementById("reset").addEventListener("click", resetGame); // Add event listener for the reset button
 
 function getComputerChoice() {
     return choiceArray[Math.floor(Math.random() * 3)];
@@ -41,4 +41,10 @@ function game() {
     document.getElementById("roundResults").textContent = resultMessage;
 }
 
-
+function resetGame() {
+    computerScore = 0;
+    userScore = 0;
+    document.getElementById("playerScore").textContent = userScore;
+    document.getElementById("computerScore").textContent = computerScore;
+    document.getElementById("roundResults").textContent = "";
+}

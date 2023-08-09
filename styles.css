@@ -11,25 +11,26 @@ body {
 
 .game-container {
     background-color: #333;
-    border-radius: 10px;
+    border-radius: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    padding: 20px;
+    padding: 40px;
     text-align: center;
 }
 
 .title {
-    font-size: 24px;
-    margin-bottom: 10px;
+    font-size: 38px;
+    margin-bottom: 20px;
 }
 
 .choice-btn {
     background-color: #444;
     color: #fff;
     border: none;
-    padding: 10px 20px;
-    margin: 5px;
-    border-radius: 5px;
+    padding: 20px 40px;
+    margin: 15px;
+    border-radius: 12px;
     cursor: pointer;
+    font-size: 24px;
 }
 
 .choice-btn:hover {
@@ -39,31 +40,32 @@ body {
 .scores {
     display: flex;
     justify-content: space-around;
-    margin: 20px 0;
-    font-size: 20px;
+    margin: 40px 0;
+    font-size: 28px;
 }
 
 .player-score, .computer-score {
     background-color: #222;
-    padding: 10px 20px;
-    border-radius: 5px;
+    padding: 20px 40px;
+    border-radius: 12px;
 }
 
 .round-results {
     background-color: #222;
-    padding: 10px;
-    border-radius: 5px;
-    margin-bottom: 10px;
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    font-size: 24px;
 }
 
 .reset-btn {
     background-color: #f44336;
     color: #fff;
     border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
+    padding: 20px 40px;
+    border-radius: 12px;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 24px;
 }
 
 .reset-btn:hover {
