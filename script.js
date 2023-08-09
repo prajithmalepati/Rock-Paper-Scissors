@@ -15,11 +15,6 @@ function getUserChoice(){
     }
 }
 
-
-
-// console.log(computerChoice);
-// console.log(userChoice)
-
 function game(){
     computerChoice = getComputerChoice();
     userChoice = getUserChoice();
