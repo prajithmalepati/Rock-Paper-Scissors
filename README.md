@@ -23,12 +23,6 @@ This project is a web-based Rock-Paper-Scissors game where the player can compet
 - The game displays the player's and computer's scores after each round.
 - A "Play Again!" button resets the game and scores.
 
-## Installation
-
-1. Clone the repository to your local machine:
-   ```sh
-   git clone https://github.com/your-username/rock-paper-scissors.git
-Open the index.html file in a web browser to start playing the game.
 ## Usage
 Choose your move by clicking on the appropriate button (Rock, Paper, or Scissors).
 The computer's choice will be displayed, and the round outcome will be shown.
