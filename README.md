@@ -24,11 +24,11 @@ This project is a web-based Rock-Paper-Scissors game where the player can compet
 - A "Play Again!" button resets the game and scores.
 
 ## Usage
-Choose your move by clicking on the appropriate button (Rock, Paper, or Scissors).
-The computer's choice will be displayed, and the round outcome will be shown.
-The player's and computer's scores will be updated based on the round outcome.
-The first player to reach 5 wins is declared the overall winner.
+- Choose your move by clicking on the appropriate button (Rock, Paper, or Scissors).
+- The computer's choice will be displayed, and the round outcome will be shown.
+- The player's and computer's scores will be updated based on the round outcome.
+- The first player to reach 5 wins is declared the overall winner.
 ## Game Rules
-Rock beats Scissors
-Scissors beats Paper
-Paper beats Rock
+- Rock beats Scissors
+- Scissors beats Paper
+- Paper beats Rock
