@@ -1,32 +1,44 @@
-const choiceArray = ["Rock","Paper","Scissors"];
+const choiceArray = ["Rock", "Paper", "Scissors"];
 let computerChoice;
 let userChoice;
-let computerScore;
-let userScore;
+let computerScore=0;
+let userScore=0;
 
-function getComputerChoice(){
-    return choiceArray[Math.floor((Math.random()*3))];
-}
-function getUserChoice(){
-    while(true){
-        let input = prompt("Enter 1 for Rock , 2 for Paper and 3 for Scissors");
-        if(input==1||input==2||input==3)
-        return choiceArray[(input-1)];
-    }
+// Add event listeners to the buttons to capture user choices
+document.getElementById("rock").addEventListener("click", () => getUserChoice("Rock"));
+document.getElementById("paper").addEventListener("click", () => getUserChoice("Paper"));
+document.getElementById("scissors").addEventListener("click", () => getUserChoice("Scissors"));
+
+function getComputerChoice() {
+    return choiceArray[Math.floor(Math.random() * 3)];
 }
 
-function game(){
+function getUserChoice(choice) {
+    userChoice = choice;
+    game(); // Call the game logic after user choice is set
+}
+
+function game() {
     computerChoice = getComputerChoice();
-    userChoice = getUserChoice();
-    if((userChoice=="Rock" && computerChoice=="Scissors")||(userChoice=="Paper" && computerChoice=="Rock")||(userChoice=="Scissors" && computerChoice=="Paper")){
-        console.log("you win!  "+userChoice+" beats "+computerChoice);
-    }else if(userChoice==computerChoice) {
-        console.log("Tie game")
-        
+    
+    let resultMessage = "";
+
+    if (
+        (userChoice == "Rock" && computerChoice == "Scissors") ||
+        (userChoice == "Paper" && computerChoice == "Rock") ||
+        (userChoice == "Scissors" && computerChoice == "Paper")
+    ) {
+        resultMessage = "You win! " + userChoice + " beats " + computerChoice;
+        userScore++;
+    } else if (userChoice == computerChoice) {
+        resultMessage = "Tie game";
+    } else {
+        resultMessage = "You lose! " + computerChoice + " beats " + userChoice;
+        computerScore++;
     }
-    else{
-        console.log("you lose!  "+computerChoice+" beats "+userChoice);
-    }
+    document.getElementById("playerScore").textContent = userScore;
+    document.getElementById("computerScore").textContent = computerScore;
+    document.getElementById("roundResults").textContent = resultMessage;
 }
 
-game();
+
