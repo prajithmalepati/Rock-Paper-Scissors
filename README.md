@@ -8,8 +8,6 @@ This is a simple Rock-Paper-Scissors game built using HTML, CSS, and JavaScript.
 - [Features](#features)
 - [Usage](#usage)
 - [Game Rules](#game-rules)
-- [Author](#author)
-- [License](#license)
 
 ## Introduction
 
