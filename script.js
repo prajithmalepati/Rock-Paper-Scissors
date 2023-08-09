@@ -9,7 +9,7 @@ function getComputerChoice(){
 }
 function getUserChoice(){
     while(true){
-        let input = prompt("Enter 1 for Rock , 2 for Paper and 3 for Scissor");
+        let input = prompt("Enter 1 for Rock , 2 for Paper and 3 for Scissors");
         if(input==1||input==2||input==3)
         return choiceArray[(input-1)];
     }
@@ -23,5 +23,15 @@ function getUserChoice(){
 function game(){
     computerChoice = getComputerChoice();
     userChoice = getUserChoice();
-    
+    if((userChoice=="Rock" && computerChoice=="Scissors")||(userChoice=="Paper" && computerChoice=="Rock")||(userChoice=="Scissors" && computerChoice=="Paper")){
+        console.log("you win!  "+userChoice+" beats "+computerChoice);
+    }else if(userChoice==computerChoice) {
+        console.log("Tie game")
+        
+    }
+    else{
+        console.log("you lose!  "+computerChoice+" beats "+userChoice);
+    }
 }
+
+game();
