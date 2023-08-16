@@ -15,10 +15,10 @@ function getComputerChoice() {
 
 function getUserChoice(choice) {
     userChoice = choice;
-    game(); // Call the game logic after user choice is set
+    playRound(); // Call the game logic after user choice is set
 }
 
-function game() {
+function playRound() {
     if (userScore < 5 && computerScore < 5) {
         computerChoice = getComputerChoice();
 
