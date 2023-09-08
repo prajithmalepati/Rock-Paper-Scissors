@@ -1,6 +1,6 @@
 # Rock Paper Scissors Game
 
-This is a simple Rock-Paper-Scissors game built using HTML, CSS, and JavaScript. [Live Demo](#https://prajithmalepati.github.io/Rock-Paper-Scissors/)
+This is a simple Rock-Paper-Scissors game built using HTML, CSS, and JavaScript. [Live Demo](https://prajithmalepati.github.io/Rock-Paper-Scissors/)
 
 ## Table of Contents
 
