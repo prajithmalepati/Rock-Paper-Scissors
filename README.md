@@ -30,3 +30,6 @@ This project is a web-based Rock-Paper-Scissors game where the player can compet
 - Rock beats Scissors
 - Scissors beats Paper
 - Paper beats Rock
+
+### Author
+- Prajith Malepati
